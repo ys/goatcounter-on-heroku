@@ -1,0 +1,24 @@
+{
+  "name": "Goatcounter on Heroku",
+  "description": "Goatcounter but on heroku",
+  "keywords": ["analytics"],
+  "repository": "https://github.com/zgoat/goatcounter",
+  "scripts": {},
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 2
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/ph3nx/heroku-binary-buildpack.git"
+    }
+  ]
+}
